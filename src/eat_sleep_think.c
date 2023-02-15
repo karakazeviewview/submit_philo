@@ -6,11 +6,11 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 20:04:10 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/15 20:40:29 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/15 22:00:38 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 void	wait_time(t_data *data, long time_to_wait, long time_start_action)
 {

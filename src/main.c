@@ -6,11 +6,11 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 00:11:55 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/15 20:41:18 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/15 22:00:59 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 void	join_thread(t_data *data)
 {

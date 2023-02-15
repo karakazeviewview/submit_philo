@@ -6,11 +6,11 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 20:03:52 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/15 20:39:03 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/15 22:00:28 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 void	*philo_routine(void *philo_void)
 {

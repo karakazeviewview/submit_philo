@@ -6,11 +6,11 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 20:33:35 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/15 20:42:28 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/15 22:01:11 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 bool	print_state(t_data *data, time_t now, int id, const char *state)
 {

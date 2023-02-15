@@ -6,11 +6,11 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 20:09:50 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/15 20:42:04 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/15 22:01:05 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 static bool	is_philo_starve(t_data *arg)
 {

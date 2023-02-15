@@ -6,11 +6,11 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 20:02:15 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/15 21:26:59 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/15 22:04:31 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 void	input_data(int argc, char const **argv, t_data *data)
 {
@@ -44,7 +44,7 @@ bool	check_arg(int argc, char const **argv)
 	return (true);
 }
 
-static void	check_isnum(char const **argv)
+void	check_isnum(char const **argv)
 {
 	int	i;
 	int	j;

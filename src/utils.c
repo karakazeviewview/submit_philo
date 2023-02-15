@@ -6,11 +6,11 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 20:04:26 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/15 20:33:47 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/15 22:01:16 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 size_t	ft_strlen(const char *s)
 {

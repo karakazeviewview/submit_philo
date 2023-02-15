@@ -6,11 +6,11 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 20:04:34 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/15 20:36:35 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/15 22:00:54 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
 void	init_philo(t_data *data, t_philo *philo, int i)
 {

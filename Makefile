@@ -30,7 +30,7 @@ clean:
 
 PHONY			+=	fclean
 fclean:			clean
-				$(RM) $(NAME)
+				rm -f */*.o
 			
 PHONY			+=	re
 re:				fclean all
