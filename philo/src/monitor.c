@@ -6,7 +6,7 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 20:09:50 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/15 22:01:05 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/17 07:14:37 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,6 @@ void	*monitor(void *arg_void)
 	t_data	*arg;
 
 	arg = arg_void;
-	usleep(arg->time_to_die / 2);
 	while (1)
 	{
 		if (is_philo_starve(arg))

@@ -6,7 +6,7 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 20:02:15 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/15 22:04:31 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/17 07:18:20 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,21 +26,22 @@ void	input_data(int argc, char const **argv, t_data *data)
 
 bool	check_arg(int argc, char const **argv)
 {
-	int		sign;
-	long	ans;
-	char	c;
-
-	sign = 0;
-	ans = 0;
-	c = '\0';
-	if (argc == 1)
-		return (print_error(ERROR_ARG_INVALID));
-	if (ft_atol(argv[1]) < 1)
-		return (print_error(ERROR_ARG_INVALID));
 	if (argc < 5 || 6 < argc)
 		return (print_error(ERROR_ARG_INVALID));
+	if (ft_atol(argv[1]) < 1 || MAX_PHILO < ft_atol(argv[1]))
+		return (print_error(ERROR_ARG_INVALID));
 	check_isnum(argv);
-	ft_check_over(sign, ans, c);
+	if (ft_atol(argv[2]) <= 0 || ft_atol(argv[2]) > INT_MAX)
+		return (print_error(ERROR_ARG_INVALID));
+	if (ft_atol(argv[3]) <= 0 || ft_atol(argv[3]) > INT_MAX)
+		return (print_error(ERROR_ARG_INVALID));
+	if (ft_atol(argv[4]) <= 0 || ft_atol(argv[4]) > INT_MAX)
+		return (print_error(ERROR_ARG_INVALID));
+	if (argc == 6)
+	{
+		if (ft_atol(argv[5]) <= 0 || ft_atol(argv[5]) > INT_MAX)
+			return (print_error(ERROR_ARG_INVALID));
+	}
 	return (true);
 }
 
