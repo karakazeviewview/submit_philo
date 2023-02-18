@@ -6,7 +6,7 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 20:02:15 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/17 07:18:20 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/18 19:04:18 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ bool	check_arg(int argc, char const **argv)
 {
 	if (argc < 5 || 6 < argc)
 		return (print_error(ERROR_ARG_INVALID));
+	check_isnum(argv);
 	if (ft_atol(argv[1]) < 1 || MAX_PHILO < ft_atol(argv[1]))
 		return (print_error(ERROR_ARG_INVALID));
-	check_isnum(argv);
 	if (ft_atol(argv[2]) <= 0 || ft_atol(argv[2]) > INT_MAX)
 		return (print_error(ERROR_ARG_INVALID));
 	if (ft_atol(argv[3]) <= 0 || ft_atol(argv[3]) > INT_MAX)
@@ -66,16 +66,4 @@ void	check_isnum(char const **argv)
 		}
 		i++;
 	}
-}
-
-int	ft_check_over(int sign, long ans, char c)
-{
-	long	tmp;
-
-	tmp = LONG_MAX / 10;
-	if (sign == 1)
-		c++;
-	if (tmp < ans || (tmp == ans && LONG_MAX % 10 + 1 < c - '0'))
-		return (1);
-	return (0);
 }

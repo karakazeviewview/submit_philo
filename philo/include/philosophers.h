@@ -6,7 +6,7 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 19:02:53 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/15 22:06:01 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/18 19:32:49 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ void						terminate_data(t_data *data);
 int							main(int argc, char const *argv[]);
 int							ft_check_over(int sign, long ans, char c);
 long						ft_atol(const char *str);
-// static bool					is_philo_starve(t_data *arg);
-// static bool					is_num_of_eat_reached(t_data *arg);
+bool						is_philo_starve(t_data *arg);
+bool						is_num_of_eat_reached(t_data *arg);
 void						check_isnum(char const **argv);
 #endif

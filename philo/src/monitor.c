@@ -6,13 +6,13 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 20:09:50 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/17 07:14:37 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/18 19:28:10 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/philosophers.h"
 
-static bool	is_philo_starve(t_data *arg)
+bool	is_philo_starve(t_data *arg)
 {
 	int	i;
 
@@ -32,7 +32,7 @@ static bool	is_philo_starve(t_data *arg)
 	return (false);
 }
 
-static bool	is_num_of_eat_reached(t_data *arg)
+bool	is_num_of_eat_reached(t_data *arg)
 {
 	int	i;
 

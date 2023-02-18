@@ -6,7 +6,7 @@
 /*   By: mmatsuo <mmatsuo@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/15 20:04:26 by mmatsuo           #+#    #+#             */
-/*   Updated: 2023/02/15 22:01:16 by mmatsuo          ###   ########.fr       */
+/*   Updated: 2023/02/18 19:34:01 by mmatsuo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,18 @@ void	ft_putstr_fd(const char *s, int fd)
 	if (!s)
 		return ;
 	write(fd, s, ft_strlen(s));
+}
+
+int	ft_check_over(int sign, long ans, char c)
+{
+	long	tmp;
+
+	tmp = LONG_MAX / 10;
+	if (sign == 1)
+		c++;
+	if (tmp < ans || (tmp == ans && LONG_MAX % 10 + 1 < c - '0'))
+		return (1);
+	return (0);
 }
 
 long	ft_atol(const char *str)
